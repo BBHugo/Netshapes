@@ -1,11 +1,13 @@
 html {
-    background-image: url(/img/backgroundWhite.jpg) 
+    background-image: url(/img/backgroundWhite.jpg);
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 body {
     width: 100%;
     padding: 0;
     margin: 0;
+    height: 100vh;
 }
 
 header {
@@ -17,6 +19,16 @@ header {
     /* z-index: 1030; */
     background-image: url(/img/backround.gif);
     color: whitesmoke;
+    border-top: 1px solid rgb(165, 150, 51);
+    border-bottom: 2px solid rgb(165, 150, 51);
+}
+
+header div {
+    width: 30%;
+}
+
+h3 {
+    margin-left: 20%;
 }
 
 ul {
@@ -24,11 +36,33 @@ ul {
     padding: 0;
     width: 60%;
     justify-content: space-between;
+    margin: 0;
 }
 
 li {
     list-style: none;    
+    height: 100%;
+    width: 25%;
 }
+
+a /*links*/ {
+    text-decoration: none;
+    color: whitesmoke;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.hover:hover {
+    background-image: url(/img/backgroundWhite.jpg);
+}
+
+a:hover {
+    color: black;
+}
+
 
 section {
     width: 100%;
@@ -42,25 +76,37 @@ section {
     display: flex;
 }
 
-h1 {
+.sectionOne > h1 {
     z-index: 20;
     position: absolute;
-    width: 20%;
-    margin: 20% 0 10% 20%;
+    width: 300px;
+    margin: 15% 0 10% 10%;
+    font-size: 300%;
 }
 
-img {
-    width: 95%;
+h1 p {
+    font-size: .3em;
+}
+
+.title {
+    font-size: 1em;
+    margin-bottom: 0;
+    text-decoration: underline;
+    color: black;
+}
+
+.sectionOne img {
+    width: 100%;
     height: auto;
     margin: auto;
     border: 3px solid whitesmoke;
     z-index: -1;
     position: relative;
-    /* opacity: .6; */
+    opacity: .5;
 }
 
-img::after {
-    /* box-shadow: inset 40px 3px 10px 0 #000000;
+/* img::after {
+    box-shadow: inset 40px 3px 10px 0 #000000;
     background: black;
     content: '';
     display: block;
@@ -68,18 +114,19 @@ img::after {
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: 15; */
-
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: black;
     z-index: 15;
-    isolation: isolate;
-    height: 100%;
-    width: 100%;
-}
+} */
 
 .sectionTwo {
-    background: linear-gradient(gray,whitesmoke);
+    background-image: url(/img/backround.gif);
 }
+
+footer {
+    bottom: 0;
+}
+
+
+/**********************************************************************************************/
+/***********************************Media Queries**********************************************/
+/*********************************************************************************************/
+
