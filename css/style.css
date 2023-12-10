@@ -1,3 +1,37 @@
 body {
     color: orange;
 }
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1030;
+}
+
+ul {
+    display: flex;
+    padding: 0;
+    width: 60%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;    
+}
+
+section {
+    width: 100%;
+    min-height: 400px;
+    margin: 60px 0;
+}
+
+.sectionOne {
+    background: gray;
+}
+
+.sectionTwo {
+    background: navy;
+}
