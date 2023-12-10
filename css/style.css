@@ -21,6 +21,7 @@ header {
     color: whitesmoke;
     border-top: 1px solid rgb(165, 150, 51);
     border-bottom: 2px solid rgb(165, 150, 51);
+    opacity: .8;
 }
 
 header div {
@@ -74,14 +75,18 @@ section {
 .sectionOne {
     /* background: rgb(100, 85, 85); */
     display: flex;
+    align-items: center; /*Will help with the placement of our title*/
+    justify-content: center;
+    /* background-image: url(/img/foundryBackground.jpg); */
 }
 
 .sectionOne > h1 {
     z-index: 20;
     position: absolute;
-    width: 300px;
+    width: 100%;
     margin: 15% 0 10% 10%;
     font-size: 300%;
+
 }
 
 h1 p {
@@ -95,12 +100,17 @@ h1 p {
     color: black;
 }
 
+/* .backgroundContainer {
+    position: absolute;
+    width: 100%;
+    z-index: -5;
+} */
+
 .sectionOne img {
     width: 100%;
     height: auto;
     margin: auto;
     border: 3px solid whitesmoke;
-    z-index: -1;
     position: relative;
     opacity: .5;
 }
