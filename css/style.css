@@ -16,7 +16,7 @@ header {
     justify-content: space-between;
     position: fixed;
     top: 0;
-    /* z-index: 1030; */
+    z-index: 1030;
     background-image: url(/img/backround.gif);
     color: whitesmoke;
     border-top: 1px solid rgb(165, 150, 51);
@@ -78,6 +78,7 @@ section {
     align-items: center; /*Will help with the placement of our title*/
     justify-content: center;
     /* background-image: url(/img/foundryBackground.jpg); */
+    width: 100%;
 }
 
 .sectionOne > h1 {
@@ -129,6 +130,8 @@ h1 p {
 
 .sectionTwo {
     background-image: url(/img/backround.gif);
+    color: whitesmoke;
+    font-weight: normal;
 }
 
 footer {
@@ -140,3 +143,10 @@ footer {
 /***********************************Media Queries**********************************************/
 /*********************************************************************************************/
 
+marquee {
+    width: 100%;
+    height: auto;
+    color: rgb(107, 161, 179);
+    background: black;
+    font-weight: bold;
+}
