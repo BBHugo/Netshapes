@@ -1,13 +1,16 @@
 html {
     background-image: url(/img/backgroundWhite.jpg);
+    /* background-image: url(/img/backround.gif); */
+
     font-family: 'Roboto Condensed', sans-serif;
+    height: 100vh;
 }
 
 body {
     width: 100%;
     padding: 0;
     margin: 0;
-    height: 100vh;
+    height: 90vh;
 }
 
 header {
@@ -22,14 +25,23 @@ header {
     border-top: 1px solid rgb(165, 150, 51);
     border-bottom: 2px solid rgb(165, 150, 51);
     opacity: .8;
+    min-height: 10vh;
 }
 
 header div {
     width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 h3 {
-    margin-left: 20%;
+    /* margin-left: 20%;  Obsolete to the justify content and flex*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100%; */
+    margin: 0;
 }
 
 ul {
@@ -79,6 +91,7 @@ section {
     justify-content: center;
     /* background-image: url(/img/foundryBackground.jpg); */
     width: 100%;
+    margin-top: 150px;
 }
 
 .sectionOne > h1 {
@@ -132,6 +145,25 @@ h1 p {
     background-image: url(/img/backround.gif);
     color: whitesmoke;
     font-weight: normal;
+    display: flex;
+    min-height: 450px;
+}
+
+.philosophy {
+    position: absolute;
+}
+
+.sectionTwo img {
+    width: 50%;
+    opacity: .8;
+    margin-top: 3%;
+}
+
+.sectionTwo p {
+    font-size: 1rem;
+    width: 30%;
+    margin: auto;
+    padding-top: 10px;
 }
 
 footer {
@@ -145,8 +177,17 @@ footer {
 
 marquee {
     width: 100%;
-    height: auto;
+    height: 30px;
+    background-color: lightblue;
     color: rgb(107, 161, 179);
-    background: black;
+    /* background: black; */
+    background-image: url(/img/clouds.jpg);
     font-weight: bold;
+    bottom: 0;
+    margin-bottom: 0;
+}
+
+i {
+    margin-right: 20px;
+    color: black;
 }
