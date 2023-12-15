@@ -150,7 +150,7 @@ h1 p {
     align-items: center;
 }
 
-.philosophy {
+#philosophy {
     position: absolute;
     margin: 0 0 40% 5%;
 }
@@ -165,22 +165,52 @@ h1 p {
 
 .sectionTwo p {
     font-size: 1rem;
-    width: 30%;
+    width: 45%;
     margin: auto;
     padding-top: 10px;
     /* position: absolute;
     margin-left: 50%;
     margin-top: 5%; */
+    overflow: auto;
+    height: 70vh;
 }
+
+
+
+p::-webkit-scrollbar {
+    width: 5px;
+  }
+   
+  p::-webkit-scrollbar-track { /*is the entire scroll column*/
+    background: #ddd;
+    margin-block: 2.5em; /*moves the entire scroll column around*/
+    border-radius: 100vw;
+  }
+   
+  p::-webkit-scrollbar-thumb { /*controls the little bar that goes up and down*/
+    background: #666; 
+    border-radius: 100vw;
+  }
+
+
+  p::-webkit-scrollbar-button:end:increment {
+    height: 5%;
+    display: block;
+    background: transparent; /*We need a way to place the scroll bar in the center vertically*/
+  }
+
+
+
+
+
+
+
+
+
 
 footer {
     bottom: 0;
 }
-
-
-/**********************************************************************************************/
-/***********************************Media Queries**********************************************/
-/*********************************************************************************************/
 
 marquee {
     width: 100%;
@@ -197,4 +227,26 @@ marquee {
 i {
     margin-right: 20px;
     color: black;
+}
+/**********************************************************************************************/
+/***********************************Media Queries**********************************************/
+/*********************************************************************************************/
+
+@media screen and (max-width: 700px) {
+    .procedures {
+        display: none;
+    }
+
+    .lightDark {
+        display: none;
+    }
+
+    header div {
+        font-size: 10px;
+        width: 15%;
+        margin-left: 2%;
+    }
+    header ul {
+        width: 75%;
+    }
 }
