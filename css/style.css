@@ -91,7 +91,7 @@ section {
     justify-content: center;
     /* background-image: url(/img/foundryBackground.jpg); */
     width: 100%;
-    margin-top: 150px;
+    margin-top: 3%;
 }
 
 .sectionOne > h1 {
@@ -147,16 +147,20 @@ h1 p {
     font-weight: normal;
     display: flex;
     min-height: 450px;
+    align-items: center;
 }
 
 .philosophy {
     position: absolute;
+    margin: 0 0 40% 5%;
 }
 
 .sectionTwo img {
-    width: 50%;
+    max-width: 50%;
+    /* width: auto; */
     opacity: .8;
     margin-top: 3%;
+    height: 100%;
 }
 
 .sectionTwo p {
@@ -164,6 +168,9 @@ h1 p {
     width: 30%;
     margin: auto;
     padding-top: 10px;
+    /* position: absolute;
+    margin-left: 50%;
+    margin-top: 5%; */
 }
 
 footer {
