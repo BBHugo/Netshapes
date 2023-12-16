@@ -3,14 +3,14 @@ html {
     /* background-image: url(/img/backround.gif); */
 
     font-family: 'Roboto Condensed', sans-serif;
-    height: 100vh;
+    height: auto;
 }
 
 body {
     width: 100%;
     padding: 0;
     margin: 0;
-    height: 90vh;
+    height: auto;
 }
 
 header {
@@ -42,6 +42,7 @@ h3 {
     justify-content: center;
     /* height: 100%; */
     margin: 0;
+    width: 100%;
 }
 
 ul {
@@ -112,6 +113,7 @@ h1 p {
     margin-bottom: 0;
     text-decoration: underline;
     color: black;
+
 }
 
 /* .backgroundContainer {
@@ -125,7 +127,7 @@ h1 p {
     height: auto;
     margin: auto;
     border: 3px solid whitesmoke;
-    position: relative;
+    /* position: relative; */
     opacity: .5;
 }
 
@@ -148,33 +150,40 @@ h1 p {
     display: flex;
     min-height: 450px;
     align-items: center;
+    justify-content: space-between;
 }
 
 #philosophy {
-    position: absolute;
-    margin: 0 0 40% 5%;
+    /* position: absolute; */
+    /* margin: 0 0 50% 5%; */
+}
+
+.sectionTwo .welder {
+    width: 50%;
+    height: 200%;
+    margin: 0;
 }
 
 .sectionTwo img {
-    max-width: 50%;
+    max-width: 100%;
     /* width: auto; */
     opacity: .8;
-    margin-top: 3%;
+    /* margin-top: 3%; */
     height: 100%;
 }
-
 .sectionTwo p {
-    font-size: 1rem;
+   font-size: 2rem;
     width: 45%;
     margin: auto;
     padding-top: 10px;
-    /* position: absolute;
-    margin-left: 50%;
-    margin-top: 5%; */
-    overflow: auto;
-    height: 70vh;
+    /* position: absolute; */
+    /* margin-left: 50%; */
+    margin-top: 5%;
+    /* overflow: auto;
+    height: 70vh; */
 }
 
+p
 
 
 p::-webkit-scrollbar {
@@ -232,6 +241,7 @@ i {
 /***********************************Media Queries**********************************************/
 /*********************************************************************************************/
 
+
 @media screen and (max-width: 700px) {
     .procedures {
         display: none;
@@ -248,5 +258,15 @@ i {
     }
     header ul {
         width: 75%;
+    }
+}
+
+@media screen and (max-width: 1662px){
+    .sectionTwo img {
+        width: 100%;
+    }
+
+    section p {
+        width: 100%;
     }
 }
