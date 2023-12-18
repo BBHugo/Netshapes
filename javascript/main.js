@@ -1,5 +1,18 @@
 let background = document.querySelector(".background")
 
+document.querySelector('h5').addEventListener('click',showMarquee)
+
+function showMarquee(){
+    let marquee = document.querySelector('#marquee')
+    if(marquee.style.display !== 'none'){
+        marquee.style.display = 'none'
+    }else {
+        marquee.style.display = 'inline'
+    }
+
+    console.log('Website provided to Netshapes, Inc for usage by Hugo Mendoza. Any code provided by Hugo Mendoza remains under ownership of Hugo Mendoza unless otherwise stated in writing. Hello World! :)')
+}
+
 let imageIndex = 2
 
 function changeBackground() {

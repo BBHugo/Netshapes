@@ -227,13 +227,18 @@ footer {
 marquee {
     width: 100%;
     height: 30px;
-    background-color: lightblue;
+    /* background-color: lightblue; */
     color: rgb(107, 161, 179);
     /* background: black; */
     background-image: url(/img/clouds.jpg);
     font-weight: bold;
     bottom: 0;
     margin-bottom: 0;
+}
+
+#marquee {
+    /* width: 100%; */
+    display: none;
 }
 
 i {
