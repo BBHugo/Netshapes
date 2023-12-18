@@ -154,6 +154,8 @@ h1 p {
 }
 
 #philosophy {
+    font-size: 2rem;
+    margin-top: 10px;
     /* position: absolute; */
     /* margin: 0 0 50% 5%; */
 }
@@ -172,13 +174,14 @@ h1 p {
     height: 100%;
 }
 .sectionTwo p {
-   font-size: 2rem;
-    width: 45%;
+   font-size: 1.5rem;
+    width: 85%;
     margin: auto;
     padding-top: 10px;
     /* position: absolute; */
     /* margin-left: 50%; */
     margin-top: 5%;
+    text-align: center;
     /* overflow: auto;
     height: 70vh; */
 }
@@ -240,6 +243,26 @@ i {
 /**********************************************************************************************/
 /***********************************Media Queries**********************************************/
 /*********************************************************************************************/
+@media screen and (max-width: 321px){
+    .logoHeader {
+        display: none;
+    }
+
+    .sectionTwo p {
+        font-size: 1rem;
+    }
+
+    section {
+        margin: 0;
+        min-height: 300px;
+    }
+
+    .sectionOne{
+        height: auto;
+    }
+
+}
+
 
 
 @media screen and (max-width: 700px) {
@@ -262,6 +285,10 @@ i {
 }
 
 @media screen and (max-width: 1662px){
+    .sectionTwo {
+        flex-direction: column;
+    }
+
     .sectionTwo img {
         width: 100%;
     }

@@ -7,6 +7,11 @@ function changeBackground() {
 
     // background.style.opacity = '0'
 
+    let opacity = .8
+
+    
+
+     background.style.opacity = opacity
 
     background.src = `img/background${imageIndex}.jpg`
 
