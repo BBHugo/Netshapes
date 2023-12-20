@@ -52,24 +52,47 @@ function changeBackground() {
 
 //************************************************* */
 
-
-let imageIndex2 = 2
 let opacityVal = .8
 
-function changeBackground2() {
-    let number = 1
-    if(opacityVal < 0){
-        background.src = `img/background${imageIndex2}.jpg`
-        imageIndex2++
-        opacityVal = .8
-        number = 2
-    if(imageIndex2 > 4){
-        imageIndex2 = 1
-    }
-    }else if(opacityVal )
-    background.style.opacity = opacityVal
-    opacityVal -= .1
 
+
+function changeBackground2() {
+    // let imageIndex2 = 2
+    let number = 1
+    // if(opacityVal > .8){
+    //     number = 1
+    // }else if(opacityVal < 0){
+    //     background.src = `img/background${imageIndex2}.jpg`
+    //     imageIndex2++
+    //     number = 2
+    //         if(imageIndex2 > 4){
+    //             imageIndex2 = 1
+    // }
+    // }else if(opacityVal > .8 ) {
+    //     number = 1
+    // }
+
+    if(number == 1){
+        opacityVal -= .1
+    }else if(number == 2){
+        opacityVal += .1
+    }
+
+    if(opacityVal < 0){
+        number = 2
+        console.log('switched to 2')
+    }else if(opacityVal >= .8){
+        number = 1
+        console.log('switched to 1')
+    }
+
+    console.log(`The number is ${number}`)
+
+
+
+
+    background.style.opacity = opacityVal
+    
 }
 
-setInterval(changeBackground2, 2000)
+setInterval(changeBackground2, 200)
