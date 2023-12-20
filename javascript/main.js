@@ -57,18 +57,19 @@ let imageIndex2 = 2
 let opacityVal = .8
 
 function changeBackground2() {
-
-    if(opacityVal === 0){
-        background.src = `img/background${imageIndex}.jpg`
+    let number = 1
+    if(opacityVal < 0){
+        background.src = `img/background${imageIndex2}.jpg`
         imageIndex2++
-
-        if(imageIndex2 > 4){
-            imageIndex2 = 1
-        }
+        opacityVal = .8
+        number = 2
+    if(imageIndex2 > 4){
+        imageIndex2 = 1
     }
+    }else if(opacityVal )
     background.style.opacity = opacityVal
     opacityVal -= .1
 
 }
 
-setInterval(changeBackground2, 200)
+setInterval(changeBackground2, 2000)
