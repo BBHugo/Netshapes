@@ -1,7 +1,7 @@
 let background = document.querySelector(".background")
 
 document.querySelector('h5').addEventListener('click',showMarquee)
-
+document.querySelector('.lightDark').addEventListener('click',lightDark)
 
 //This is for the footer
 function showMarquee(){
@@ -99,11 +99,39 @@ setInterval(changeBackground, 4000)
 
 //******************************Code below will be light Dark mode using OOPs */
 
-class LightDark{
-    constructor(body,header,button,sectionTwo){
-        this.body = document.querySelector('body')
-        this.header = document.querySelector('header')
-        this.button = document.querySelector('.lightDark')
-        this.sectionTwo = document.querySelector('.sectionTwo')
+// class LightDark{
+//     constructor(body,header,button,sectionTwo){
+//         this.body = document.querySelector('body')
+//         this.header = document.querySelector('header')
+//         this.button = document.querySelector('.lightDark')
+//         this.sectionTwo = document.querySelector('.sectionTwo')
+//     }
+// }
+
+// class Light extends LightDark{
+//     constructor(body,header,button,sectionTwo){
+//     super(body)
+//     super(header)
+//     super(button)
+//     super(sectionTwo)
+//     }
+// }
+
+//Code below is for light Dark the normal way
+
+function lightDark() {
+    let body = document.querySelector('body')
+    let header = document.querySelector('header')
+    let button = document.querySelector('.lightDark')
+    let sectionTwo = document.querySelector('.sectionTwo')
+
+    if(button.innerText === 'Light Mode'){
+        body.style.background = 'white'
+        header.style.background = 'green'
+        button.innerText = 'Dark Mode'
+    }else if(button.innerText === 'Dark Mode'){
+        body.style.background = 'black'
+        header.style.background = 'purple'
+        button.innerText = 'Light Mode'
     }
 }
