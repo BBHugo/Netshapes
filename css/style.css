@@ -1,5 +1,5 @@
 html {
-    background-image: url(/img/backgroundWhite.jpg);
+    background-image: url(../img/backgroundWhite.jpg);
     /* background-image: url(/img/backround.gif); */
 
     font-family: 'Roboto Condensed', sans-serif;
@@ -20,12 +20,12 @@ header {
     position: fixed;
     top: 0;
     z-index: 1030;
-    background-image: url(/img/backround.gif);
+    background-image: url(../img/backround.gif);
     color: whitesmoke;
     border-top: 1px solid rgb(165, 150, 51);
     border-bottom: 2px solid rgb(165, 150, 51);
     opacity: .8;
-    min-height: 10vh;
+    min-height: 8vh;
 }
 
 header div {
@@ -70,7 +70,7 @@ a /*links*/ {
 }
 
 .hover:hover {
-    background-image: url(/img/backgroundWhite.jpg);
+    background-image: url(../img/backgroundWhite.jpg);
 }
 
 a:hover {
@@ -144,7 +144,7 @@ h1 p {
 } */
 
 .sectionTwo {
-    background-image: url(/img/backround.gif);
+    background-image: url(../img/backround.gif);
     color: whitesmoke;
     font-weight: normal;
     display: flex;
@@ -152,6 +152,7 @@ h1 p {
     align-items: center;
     justify-content: space-between;
 }
+
 
 #philosophy {
     font-size: 2rem;
@@ -186,7 +187,107 @@ h1 p {
     height: 70vh; */
 }
 
-p
+.sectionThree {
+    display: flex;
+    width: 100%;
+}
+
+.careersDiv, .businessesDiv {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    font-size: 2rem;
+    height: 4vh;
+    margin: 0 10px;
+}
+
+.inputContainer {
+    display: none;
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    font-size: 2rem;
+    height: 4vh;
+    margin: 0 10px;
+}
+
+#contact {
+    width: 100%;
+}
+
+.sectionThree div {
+    width: 100%;
+    margin: 0;
+    color: black;
+}
+
+.sectionThree div h4 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: .8rem;
+    margin: 3px 0 30px 0;
+}
+
+.inputContainer {
+    flex-direction: column;
+    height: 15vh;
+    margin-top: 30px;
+}
+
+.inputContainer input {
+    width: 30%;
+    height: 2vh;
+    margin-top: 10px;
+}
+
+.inputContainer .messageInput {
+    height: 5vh;
+}
+
+.collapseExButton {
+    width: 10%;
+    margin-left: 5px;
+    height: 2vh;
+}
+
+button {
+    width: 25%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/* .businessesDiv {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    font-size: 2rem;
+    height: 1.2vh;
+} */
+
+
+
+/* h5 {
+    font-size: 1.2rem;
+} */
+
+.sectionThree div a {
+    color: blue;
+    height: 1.5vh;
+    margin: 0 0 0 10px;;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.sectionThree img {
+    width: 50%;
+    margin: 0;
+}
+
 
 
 p::-webkit-scrollbar {
@@ -230,7 +331,7 @@ marquee {
     /* background-color: lightblue; */
     color: rgb(107, 161, 179);
     /* background: black; */
-    background-image: url(/img/clouds.jpg);
+    background-image: url(../img/clouds.jpg);
     font-weight: bold;
     bottom: 0;
     margin-bottom: 0;
@@ -275,9 +376,9 @@ i {
         display: none;
     }
 
-    .lightDark {
+    /* .lightDark {
         display: none;
-    }
+    } */
 
     header div {
         font-size: 10px;

@@ -2,6 +2,7 @@ let background = document.querySelector(".background")
 
 document.querySelector('h5').addEventListener('click',showMarquee)
 document.querySelector('.lightDark').addEventListener('click',lightDark)
+document.querySelector('.collapseExButton').addEventListener('click',showInputs)
 
 //This is for the footer
 function showMarquee(){
@@ -13,6 +14,18 @@ function showMarquee(){
     }
 
     console.log('Website provided to Netshapes, Inc for usage by Hugo Mendoza. Any code provided by Hugo Mendoza remains under ownership of Hugo Mendoza unless otherwise stated in writing. Hello World! :)')
+}
+
+function showInputs(){
+    let inputsDiv = document.querySelector('.inputContainer')
+    let button = document.querySelector('.collapseExButton')
+    if(inputsDiv.style.display !== 'none'){
+        inputsDiv.style.display = 'none'
+        button.innerText = 'Click to Contact >'
+    }else {
+        inputsDiv.style.display = 'flex'
+        button.innerText = 'Collapse v'
+    }
 }
 
 
@@ -126,7 +139,7 @@ function lightDark() {
     let sectionTwo = document.querySelector('.sectionTwo')
 
     if(button.innerText === 'Light Mode'){
-        body.style.background = 'white'
+        body.style.background = 'url(/img/backgroundWhite.jpg)'
         header.style.background = 'green'
         button.innerText = 'Dark Mode'
     }else if(button.innerText === 'Dark Mode'){
