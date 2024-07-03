@@ -20,7 +20,7 @@
             <li class="hover"><a href="#">Alloys Cast</a></li>
             <li class="hover"><a href="#">Contact Us</a></li>
             <li class="hover procedures"><a href="#">Procedures</a></li>
-            <li class="hover lightDark light dark"><a href="#" class="lightDarkMode">Dark Mode</a></li>
+            <!-- <li class="hover lightDark light dark"><a href="#" class="lightDarkMode">Dark Mode</a></li> -->
         </ul>
     </header>
 
@@ -59,26 +59,34 @@
             <h4> Cast your future into a field of new adventures, expanding horizons. </h4>
             
             <div class= businessesDiv>
-                <h5>For Businesses:</h5>
-                <button type="button" name="inputsExpand" class="collapseExButton">Click to Contact ></button>
+                <!-- <h5>For Businesses:</h5> -->
+
+                For Businesses: <button type="button" name="inputsExpand" class="collapseExButton">Click to Contact ></button>
             </div>
 
 
-            <div class="inputContainer" style="display: none;">
+            <form class="inputContainer" style="display: none;">
                 <input class="emailInput" type="text" name="" value="" placeholder="Enter Email">
                 <input class="phoneInput" type="text" name="phone" value="" placeholder="Enter Phone #">
                 <input class="messageInput" type="text" name="description" placeholder="Enter quick message">
-                <button type="button" name="button" class="businessButon">Submit</button>
-            </div>
+                <div>
+                    <h8 class="margin">Have You Previously Done Work With Netshapes Before?</h8>
+                
+                    <h6>Yes<input type="radio" value="Yes" name="yesNo"></h6>
+                    <h6>No<input type="radio" value="No" name="yesNo"></h6>
+                    <h6>Unsure<input type="radio" value="Unsure" name="yesNo"></h6>
+                </div>
+                <input type="submit" value="Submit" name="button" class="businessButon"></button>
+            </form>
 
 
             <div class="careersDiv">
-                <h5>For Careers: </h5>
-                <a href="#">Find the Position for YOU</a>
+                <!-- <h5>For Careers: </h5> -->
+                For Careers: <a href="#">Find the Position for YOU</a>
             </div>
         </div>
         
-        <img src="img/waxInject.jpg">
+        <img src="img/waxInject.jpg" class="stubborn">
 
     </section>
 

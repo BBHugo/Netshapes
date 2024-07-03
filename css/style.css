@@ -4,6 +4,8 @@ html {
 
     font-family: 'Roboto Condensed', sans-serif;
     height: auto;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -11,6 +13,8 @@ body {
     padding: 0;
     margin: 0;
     height: auto;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 header {
@@ -26,6 +30,8 @@ header {
     border-bottom: 2px solid rgb(165, 150, 51);
     opacity: .8;
     min-height: 8vh;
+    max-width: inherit;
+    box-sizing: border-box;
 }
 
 header div {
@@ -77,6 +83,9 @@ a:hover {
     color: black;
 }
 
+.procedures {
+    margin-right: 10%;
+}
 
 section {
     width: 100%;
@@ -190,17 +199,18 @@ h1 p {
 .sectionThree {
     display: flex;
     width: 100%;
+    flex-flow: row wrap;
 }
 
-.careersDiv, .businessesDiv {
+.sectionThreeDiv .careersDiv, .sectionThreeDiv .businessesDiv {
     display: flex;
     text-align: center;
     justify-content: center;
     justify-self: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1rem;
     height: 4vh;
-    margin: 0 10px;
+    margin: 50px 10px;
 }
 
 .inputContainer {
@@ -219,7 +229,7 @@ h1 p {
 }
 
 .sectionThree div {
-    width: 100%;
+    width: 50%;
     margin: 0;
     color: black;
 }
@@ -240,7 +250,7 @@ h1 p {
 .inputContainer input {
     width: 30%;
     height: 2vh;
-    margin-top: 10px;
+    margin-top: 2px;
 }
 
 .inputContainer .messageInput {
@@ -248,9 +258,31 @@ h1 p {
 }
 
 .collapseExButton {
-    width: 10%;
+    width: 30%;
     margin-left: 5px;
-    height: 2vh;
+    height: 3vh;
+}
+
+form {
+    font-size: 1rem;
+}
+
+form div {
+    font-size: 1rem;
+}
+
+h6 {
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 5px;
+    font-style:normal;
+    width: 5%;
+    height: 40px;
+}
+
+.margin {
+    display: inline-block;
+    padding-bottom: 10px;
 }
 
 button {
@@ -283,15 +315,17 @@ button {
     text-decoration: underline;
 }
 
-.sectionThree img {
+.sectionThree .stubborn {
     width: 50%;
     margin: 0;
+    display: block;
 }
 
 
 
 p::-webkit-scrollbar {
     width: 5px;
+    overflow-y: hidden;
   }
    
   p::-webkit-scrollbar-track { /*is the entire scroll column*/
@@ -367,11 +401,13 @@ i {
         height: auto;
     }
 
+
+
 }
 
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
     .procedures {
         display: none;
     }
@@ -388,6 +424,23 @@ i {
     header ul {
         width: 75%;
     }
+
+    .sectionThree {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .sectionThree div {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+
+    .sectionThree .stubborn{
+        display: block;
+        width: 100%;
+        margin-top: 30px;
+    }
 }
 
 @media screen and (max-width: 1662px){
@@ -402,4 +455,6 @@ i {
     section p {
         width: 100%;
     }
+
+
 }

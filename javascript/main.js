@@ -1,7 +1,7 @@
 let background = document.querySelector(".background")
 
 document.querySelector('h5').addEventListener('click',showMarquee)
-document.querySelector('.lightDark').addEventListener('click',lightDark)
+// document.querySelector('.lightDark').addEventListener('click',lightDark) //Removed due to it being not needed.
 document.querySelector('.collapseExButton').addEventListener('click',showInputs)
 
 //This is for the footer
@@ -26,6 +26,8 @@ function showInputs(){
         inputsDiv.style.display = 'flex'
         button.innerText = 'Collapse v'
     }
+
+    console.log("ShowInputs inputing")
 }
 
 
